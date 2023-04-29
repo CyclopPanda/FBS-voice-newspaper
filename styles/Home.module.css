@@ -1,0 +1,95 @@
+.title h1 {
+  color: rgb(39, 39, 39);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  font-size: 2rem;
+}
+
+.main {
+  margin: 2.5% 5%;
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    'latestTitle featuredTitle'
+    'latest featured'
+    'feedTitle feedTitle'
+    'feed feed';
+}
+
+.main>*>h1 {
+  display: grid;
+  padding: 0 1vw;
+}
+
+.main>*>h1::after {
+  content: "";
+  height: 2px;
+  position: relative;
+  bottom: 2.5px;
+  left: -2px;
+  width: 20%;
+  background-color: rgb(144, 144, 144);
+}
+
+.latestTitle {
+  grid-area: latestTitle;
+}
+.latest {
+  grid-area: latest;
+}
+
+.featuredTitle {
+  grid-area: featuredTitle;
+}
+.featured {
+  grid-area: featured;
+}
+
+.feedTitle {
+  grid-area: feedTitle;
+}
+.feed {
+  grid-area: feed;
+}
+
+.latest, .featured, .feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.feed {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.latest {
+  grid-template-columns: 100%;
+}
+
+.latest > a > div {
+  height: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  /*Smaller screens*/
+  .main {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      'latestTitle'
+      'latest'
+      'featuredTitle'
+      'featured'
+      'feedTitle'
+      'feed';
+  }
+
+  .latest > a > div {
+    height: 50vh;
+  }
+
+  .main>*>h1::after {
+    width: 100%;
+  }
+}
