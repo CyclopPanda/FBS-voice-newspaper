@@ -6,8 +6,8 @@ const graphcms = new GraphQLClient(
 );
 
 const POSTS = gql`
-    {
-        posts {
+   query getPosts {
+        posts (sort: "createdAt:desc", pagination: { limit: 100 }) {
             id
             title
             datePublished
