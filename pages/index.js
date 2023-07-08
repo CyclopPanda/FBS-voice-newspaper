@@ -9,11 +9,11 @@ export async function getStaticProps() {
   return Content.getStaticProps();
 }
 
-export default function Home({ Console.log(posts), layoutCategories}) {
-
-  var sortedPosts = ParseContent(posts, layoutCategories);
-
-  return (
+export default function Home({ posts, layoutCategories}) { 
+  Console.log(posts);
+   var sortedPosts = ParseContent(posts, layoutCategories); 
+  
+   return (
     <div className={styles.container}>
       <DefaultHead/>
 
