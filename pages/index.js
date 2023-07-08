@@ -9,7 +9,7 @@ export async function getStaticProps() {
   return Content.getStaticProps();
 }
 
-export default function Home({ posts, layoutCategories}) {
+export default function Home({ Console.log(posts), layoutCategories}) {
 
   var sortedPosts = ParseContent(posts, layoutCategories);
 
