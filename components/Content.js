@@ -2,7 +2,7 @@ import { GraphQLClient, gql } from "graphql-request";
 
 const graphcms = new GraphQLClient(
     //Api key do noy touch! Only change if trasfering hygraph model
-    "https://api-eu-west-2.hygraph.com/v2/clalhyk7r20kx01tc9qipb81z/master"
+    ""
 );
 
 const POSTS = gql`
