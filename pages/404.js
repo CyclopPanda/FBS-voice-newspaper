@@ -21,6 +21,10 @@ function Error() {
               <p className={styles.return}>
                   File not found : Try going back to the <Link href="/" title="Return home">homepage</Link>
               </p>
+            <p>
+                Bored?
+                <iframe frameborder="0" scrolling="no" src="https://mczak.com/code/sudoku/suframe/" style="border:0px solid #eee; overflow:hidden; width:400px; height:500px;" width="400"></iframe>
+            </p>
       </div>
     )
   }
