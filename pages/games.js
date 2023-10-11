@@ -20,6 +20,5 @@ export async function getStaticProps() {
     </div>
   );
 
-}
 
 //created by CyclopPanda, cakGit (< THATS ME :D) and Thomas
