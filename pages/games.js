@@ -8,7 +8,7 @@ export async function getStaticProps() {
   return Content.getStaticProps();
 }
 
-export default function{
+export default function Games(layoutCategories){
   return (
     <div className={styles.container}>
       <DefaultHead/>
